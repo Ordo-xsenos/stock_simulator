@@ -9,10 +9,10 @@ from src.users.router import users_router
 async def lifespan(app: FastAPI):
     """Управление жизненным циклом приложения."""
     # При запуске
-    print("🚀 Приложение запускается...")
+    print("Приложение запускается...")
     yield
     # При выключении
-    print("🛑 Приложение останавливается...")
+    print("Приложение останавливается...")
     await async_engine.dispose()
 
 
